@@ -41,11 +41,13 @@ export class EventClasse extends React.Component {
         this.state = {
             prenom: 'Pierre'
         }
+        // this.changerPrenom = this.changerPrenom.bind(this);
     }
 
     changerPrenom = () => {
         this.setState({
-            prenom: "Marie" 
+            prenom: "Marie" ,
+            nameInput: ''
         })
     }
 
@@ -67,12 +69,38 @@ export class EventClasse extends React.Component {
         });
     }
     
+    handleOnChange = (evenement) => {
+        this.setState({
+            nameInput: evenement.target.value
+        });
+    }
+
+    onChangeCheckBox(e) {
+        console.log(e.target.checked);
+    }
+    
+    onSubmitHandler(evenement) {
+        evenement.preventDefault();
+        console.log("Event: ", evenement);
+        console.log(evenement.target[0].value);
+    }
+
     render() {
         return (
             <>
                 <h2>Prenom : {this.state.prenom}</h2>
                 <button onClick={this.changerPrenom}>Changer de prenom</button>
                 <input type="text" onChange={this.onChangeHandler} placeholder="Saisir du texte" />
+                <br/><hr/>
+                <form action="" onSubmit={this.onSubmitHandler}>
+                    <label htmlFor="">Nom</label>
+                    {/* Value est bloqué par react, il nous faut une fonction qui permet de mettre a jour cette valeur */}
+                    <input type="text" value={this.state.nameInput} onChange={this.handleOnChange}/>
+                    <br/>
+                    <label htmlFor="">Se souvenir de moi</label>
+                    <input type="checkbox" name="" id="" onChange={this.onChangeCheckBox}/>
+                    <input type="submit" value="Envoyer"/>
+                </form>
             </>
         );
     }
