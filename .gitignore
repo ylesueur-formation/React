@@ -1,0 +1,5 @@
+node_modules
+makefile
+Dockerfile
+start.sh
+requirements.txt
