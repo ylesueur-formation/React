@@ -1,0 +1,172 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Flexo-Medium",arial,sans-serif;
+}
+
+.cards {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.card { 
+    border-radius: 5px;
+    margin: 3px;
+}
+
+.card:hover { 
+    transform: scale(1.1);
+    box-shadow: 0 0 5px rgb(160, 160, 160);
+}
+
+.card p{
+    display: flex;
+    flex-direction: column;
+}
+
+.pokemon-detail {
+    display: flex;
+    justify-content: center;
+    background-color: #1d1d1d;
+    color: white;
+    box-shadow: 0 0 5px black;
+}
+
+.pokemon-infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin-left: 20px;
+    padding: 5px;
+}
+
+.img-container{
+    width: 200px;
+    height: 200px;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.img-container.preview {
+    width: 75px;
+    height: 75px;
+    margin: auto;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+li {
+    border-radius: 5px;
+    padding: 2px 5px;
+    margin-right: 10px;
+}
+
+.type1 {    
+    background-color: #a4acaf;
+    color: black;
+    
+}
+
+.type3 {    
+    background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+    color: white;
+    
+}
+
+.type4 {
+    background-color: #b97fc9;
+    color: white;
+    
+}
+
+.type7 {
+    background-color: #729f3f;
+    color: white;
+    
+}
+
+.type10 {
+    background-color: #d66819;
+    color: white;
+    
+}
+
+.type11 {
+    background-color: #4592c4;
+    color: white;
+    
+}
+
+.type12 {
+    background-color: #9bcc50;
+    color: #1d1d1d;
+}
+
+
+.pagination{
+    display: flex;
+    align-items: center;
+}
+
+.pagination .page-link{
+    color: #007bff;
+    background-color: #fff;
+    text-decoration: none;
+    border: 1px solid #dee2e6;
+    padding: 8px 12px;
+}
+
+button.page-link {
+    outline: 0;
+    border: none;
+    background-color: transparent;
+    color: #007bff;
+    font-size: 1em;
+}
+
+button.page-link:disabled {
+    color: #212529;
+    opacity: 0.6;
+}
+
+.page-item {
+    margin: 0;
+    padding: 0;
+}
+
+.loader {
+    text-align: center;
+}
+
+@media screen and (max-width: 680px) {
+    .cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media screen and (max-width: 350px) {
+    .img-container{
+        width: 150px;
+        height: 150px;
+    }
+}
