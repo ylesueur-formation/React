@@ -1,5 +1,6 @@
 import './Personne.css';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // Un composant c'est une fonction qui vous renvoie du JSX
 // props contient tous nos attributs HMTL personnalisés

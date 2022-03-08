@@ -103,7 +103,6 @@ export class AxiosAPI extends React.Component {
             <button onClick={this.onDeleteAxiosHandler} className="btn btn-danger m-3">
                 Axios DELETE (Delete)
             </button>
-
         </>
         )
     }
