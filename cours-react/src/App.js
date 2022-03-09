@@ -13,6 +13,7 @@ export default function App() {
                      {/* Ajoute une classe "active" sur votre élément HT?L lorsqu'on clique dessus  */}
                     <NavLink to="/products">Produits</NavLink> | 
                     <NavLink to="/lifecycle">Cycle de vie</NavLink> | 
+                    <NavLink to="/localstorage">Local Storage</NavLink> | 
                     <NavLink to="/produits">Inexistante</NavLink> | 
                     <NavLink to="/products/1">Produit</NavLink> | 
                     <Link to="/products/long/1">Produit Long</Link> | 

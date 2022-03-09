@@ -6,6 +6,7 @@ import { Produits } from '../routes/Produits';
 import Produit from '../components/10-router/Produit';
 import ProduitVersionLongue from '../components/10-router/ProduitVersionLong';
 import { CycleDeVie } from '../components/09-cycle-de-vie/CycleDeVie';
+import { LocalStorage } from '../components/11-localstorage/LocalStorage';
 
 export class Router extends React.Component {
     constructor(props) {
@@ -17,6 +18,8 @@ export class Router extends React.Component {
             <Routes>
                 <Route path="/" element={<Liste />}></Route>
                 <Route path="/event-class" element={<EventClasse />}/>
+                <Route path="/lifecycle" element={<CycleDeVie />}/>
+                <Route path="/localstorage" element={<LocalStorage />}/>
                 <Route path="/lifecycle" element={<CycleDeVie />}/>
                 <Route path="/products" element={<Produits />} >
                     <Route path=":produitId" element={<Produit />} />
