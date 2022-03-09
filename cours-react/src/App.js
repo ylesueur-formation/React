@@ -9,9 +9,11 @@ export default function App() {
                 <h1>Mon super site</h1>
                 <nav>
                     <Link to="/" >Accueil</Link> | 
-                    <Link to="/products" >Produits</Link> | 
-                    <Link to="/produits" >Inexistante</Link> | 
-                    <Link to="/event-class" >Evenement Class</Link>
+                    <Link to="/products">Produits</Link> | 
+                    <Link to="/produits">Inexistante</Link> | 
+                    <Link to="/products/1">Produit</Link> | 
+                    <Link to="/products/long/1">Produit Long</Link> | 
+                    <Link to="/event-class">Evenement Class</Link>
                 </nav>
             </header>
             <Router />

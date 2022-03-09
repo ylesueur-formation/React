@@ -16,7 +16,7 @@ class Produit extends React.Component {
             <p>Produit: {this.props.params.produitId}</p>
         </>
         )
-    }invoices
+    }
 }
 
 export default withRouter(Produit)
