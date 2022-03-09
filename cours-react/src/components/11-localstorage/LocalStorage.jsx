@@ -20,11 +20,21 @@ export class LocalStorage extends React.Component {
     }
     stockData = () => {
         localStorage.setItem("nom", this.state.nom);
+        // On ne peut pas stocker un objet directement 
+        localStorage.setItem("mauvaisState", this.state);
+        const objectString = JSON.stringify(this.state);
+        console.log(objectString);
+        localStorage.setItem("state", objectString);
     }
 
     getData() {
         const reponse = localStorage.getItem("nom");
         console.log("Reponse: ", reponse);
+
+        const stringState = localStorage.getItem("state");
+        const object = JSON.parse(stringState);
+        console.log(object);
+        
     }
 
     removeData() {
