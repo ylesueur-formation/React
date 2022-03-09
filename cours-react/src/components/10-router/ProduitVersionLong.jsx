@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useParams } from 'react-router-dom';
 
 function convertClassToFunction(Produit) {
     function ComposantIntermediaire(props) {
-        const params = useParams()
+        const params = useParams();
         return (
             <Produit params={params} {...props} />
         );

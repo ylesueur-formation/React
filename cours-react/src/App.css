@@ -1,3 +1,7 @@
 a.active {
-    color: orange;
-}   
+    color: tomato;
+}
+
+a {
+    color: rgb(70, 126, 126);
+}
