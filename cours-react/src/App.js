@@ -1,6 +1,5 @@
 import { Router } from './router/Router';
-import { Link, NavLink, Outlet } from 'react-router-dom';
-import "./App.css";
+import { Link, Outlet } from 'react-router-dom';
 
 export default function App() {
   return (
@@ -9,15 +8,12 @@ export default function App() {
             <header>
                 <h1>Mon super site</h1>
                 <nav>
-                    <Link to="/" >Accueil</Link> |
-                     {/* Ajoute une classe "active" sur votre élément HT?L lorsqu'on clique dessus  */}
-                    <NavLink to="/products" end>Produits</NavLink> | 
-                    <NavLink to="/lifecycle">Cycle de vie</NavLink> | 
-                    <NavLink to="/localstorage">Local Storage</NavLink> | 
-                    <NavLink to="/produits" end>Inexistante</NavLink> | 
-                    <NavLink to="/products/1" >Produit</NavLink> | 
-                    <Link to="/products/long/1">Produit Long</Link> | 
-                    <Link to="/event-class">Evenement Class</Link>
+                    <Link to="/" >Accueil</Link> | 
+                    <Link to="/products" >Produits</Link> | 
+                    <Link to="/produits" >Inexistante</Link> | 
+                    <Link to="/event-class" >Evenement Class</Link>
+                    <Link to="/styled-component" >Style Component</Link>
+                    <Link to="/google-map" >Map</Link>
                 </nav>
             </header>
             <Router />

@@ -1,12 +1,11 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { Liste } from '../routes/Liste';
-import { EventClasse } from '../routes/Event';
-import { Produits } from '../routes/Produits';
-import Produit from '../components/10-router/Produit';
-import ProduitVersionLongue from '../components/10-router/ProduitVersionLong';
-import { CycleDeVie } from '../components/09-cycle-de-vie/CycleDeVie';
-import { LocalStorage } from '../components/11-localstorage/LocalStorage';
+import { Liste } from '../pages/Liste';
+import { EventClasse } from '../pages/Event';
+import { Produits } from '../pages/Produits';
+import Produit from '../components/Produit';
+import { Styled } from '../components/10-style-component/Styled';
+import { Map } from '../components/11-localisation/Map';
 
 export class Router extends React.Component {
     constructor(props) {
@@ -16,17 +15,16 @@ export class Router extends React.Component {
         return (
         <>
             <Routes>
-                <Route path="/" element={<Liste />}></Route>
+                <Route path="/" element={<Liste />}/>
+                {/* <Route path="/promesse" element={<Promesse />}/> */}
                 <Route path="/event-class" element={<EventClasse />}/>
-                <Route path="/lifecycle" element={<CycleDeVie />}/>
-                <Route path="/localstorage" element={<LocalStorage />}/>
-                <Route path="/lifecycle" element={<CycleDeVie />}/>
-                <Route path="/products" element={<Produits />} >
-                    <Route path=":produitId" element={<Produit />} />
-                    <Route path="exemple/:nom" element={<Produit />} />
-                </Route>
-                <Route path="/products/long/:produitId" element={<ProduitVersionLongue />} />
+                <Route path="/products" element={<Produits />} />
+                <Route path="/products/:produitId" element={<Produit />} />
+                <Route path="/styled-component" element={<Styled />} />
+                <Route path="/google-map" element={< Map />} />
                 <Route path="*" element={ <h1>Cette page n'existe pas</h1>}/>
+                {/* <Rout   e path="/personnage" element={<Personne name="Jean" salut="toto"/>}/>
+                <Route path="/personnage-render" element={<Personne name={name} salut="toto"/> }/> */}
             </Routes>
         </>
         )

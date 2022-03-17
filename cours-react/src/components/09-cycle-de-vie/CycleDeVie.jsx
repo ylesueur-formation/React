@@ -8,7 +8,6 @@ export class CycleDeVie extends React.Component {
         this.state = {
             date: new Date()
         }
-        this.timerId = null;
     }
 
     updateDate = () => {
@@ -19,7 +18,7 @@ export class CycleDeVie extends React.Component {
         // On peut mettre de la logique
         // Axios, boucle, condition etc... 
         console.log("3 - Le composant est monté");
-        this.timerId = setInterval(this.updateDate, 1000);
+        setInterval(this.updateDate, 1000);
     }
 
     componentDidUpdate(old, new_) {
@@ -30,7 +29,6 @@ export class CycleDeVie extends React.Component {
 
     componentWillUnmount() {
         console.log("4 - Le composant va être démonté");
-        clearInterval(this.timerId);
     }
 
     render() {
