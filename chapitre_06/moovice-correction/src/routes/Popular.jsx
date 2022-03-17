@@ -31,7 +31,7 @@ export class Popular extends React.Component {
             <h1>Popular</h1>
             {
                 this.state.movies.map(movie => {
-                    return <Card title={movie.title} image={movie.poster_path} descritpion={movie.overview} year={movie.release_date}/>
+                    return <Card key={movie.id} title={movie.title} image={movie.poster_path} descritpion={movie.overview} year={movie.release_date}/>
                 })
             }
         </>
