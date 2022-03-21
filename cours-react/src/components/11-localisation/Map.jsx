@@ -38,7 +38,7 @@ export class Map extends React.Component {
                 defaultCenter={{lat: 48.8531706, lng: 2.4028778}}
                 defaultZoom={15}
             >
-                <LocationPin lat={48.8531706} lng={2.4028778} text="Konexio" />
+                <LocationPin lat={48.8531706} lng={2.4028778} er />
             </GoogleMapReact>
         </div>
         )

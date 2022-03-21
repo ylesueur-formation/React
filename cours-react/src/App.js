@@ -11,9 +11,12 @@ export default function App() {
                     <Link to="/" >Accueil</Link> | 
                     <Link to="/products" >Produits</Link> | 
                     <Link to="/produits" >Inexistante</Link> | 
-                    <Link to="/event-class" >Evenement Class</Link>
-                    <Link to="/styled-component" >Style Component</Link>
-                    <Link to="/google-map" >Map</Link>
+                    <Link to="/event-class" >Evenement Class</Link> | 
+                    <Link to="/styled-component" >Style Component</Link> |
+                    <Link to="/google-map" >Map</Link> |
+                    <Link to="/func-compo" >Fonction Composant</Link> |
+                    <Link to="/use-state" >State</Link> |
+                    <Link to="/use-effect" >Effect</Link> |
                 </nav>
             </header>
             <Router />
