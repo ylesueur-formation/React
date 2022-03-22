@@ -17,6 +17,7 @@ export default function App() {
                     <Link to="/func-compo" >Fonction Composant</Link> |
                     <Link to="/use-state" >State</Link> |
                     <Link to="/use-effect" >Effect</Link> |
+                    <Link to="/forms" >Formulaires</Link> |
                 </nav>
             </header>
             <Router />
