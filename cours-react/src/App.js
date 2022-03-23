@@ -18,6 +18,8 @@ export default function App() {
                     <Link to="/use-state" >State</Link> |
                     <Link to="/use-effect" >Effect</Link> |
                     <Link to="/forms" >Formulaires</Link> |
+                    <Link to="/without-context" >Sans Contexte</Link> |
+                    <Link to="/with-context" >Avec Contexte</Link> |
                 </nav>
             </header>
             <Router />

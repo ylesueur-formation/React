@@ -10,6 +10,8 @@ import { FonctionComposant } from '../pages/FonctionComposant'
 import { State } from '../components/12-hooks/use-state/State';
 import { Effect } from '../components/12-hooks/use-effect/Effect';
 import { Formulaires } from '../components/13-forms/Formulaires';
+import { Contexte as WithoutContext} from '../components/14-contexte/without-context/Contexte'
+import { Contexte as WithContext} from '../components/14-contexte/with-context/Contexte'
 
 export class Router extends React.Component {
     constructor(props) {
@@ -30,6 +32,8 @@ export class Router extends React.Component {
                 <Route path="/use-state" element={ <State/> } />
                 <Route path="/use-effect" element={<Effect/>} />
                 <Route path="/forms" element={<Formulaires />} />
+                <Route path="/without-context" element={<WithoutContext />} />
+                <Route path="/with-context" element={<WithContext/>} />
                 <Route path="*" element={ <h1>Cette page n'existe pas</h1>}/>
                 {/* <Rout   e path="/personnage" element={<Personne name="Jean" salut="toto"/>}/>
                 <Route path="/personnage-render" element={<Personne name={name} salut="toto"/> }/> */}
