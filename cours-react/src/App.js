@@ -20,6 +20,7 @@ export default function App() {
                     <Link to="/forms" >Formulaires</Link> |
                     <Link to="/without-context" >Sans Contexte</Link> |
                     <Link to="/with-context" >Avec Contexte</Link> |
+                    <Link to="/redux" >Redux</Link> |
                 </nav>
             </header>
             <Router />

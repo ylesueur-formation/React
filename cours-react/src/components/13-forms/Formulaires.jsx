@@ -11,7 +11,6 @@ export function Formulaires() {
     // console.log("Errors: ", errors);
     const onSubmit = (data) => console.log("Data: ", data, data.email); 
     const onError = (error) => console.error("Error: ", error);
-
     return (
         <>
             <h2>Formulaires</h2>
